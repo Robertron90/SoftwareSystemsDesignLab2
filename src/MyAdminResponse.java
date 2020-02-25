@@ -13,7 +13,7 @@ public class MyAdminResponse implements AdminResponse {
     }
 
     public String getResponse(){
-        return response
+        return response;
     }
     public String getID() {
         return userID;
