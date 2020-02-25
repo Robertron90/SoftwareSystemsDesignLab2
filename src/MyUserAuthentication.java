@@ -1,8 +1,9 @@
 public class MyUserAuthentication implements UserAuthentication {
 
-    public MyUserAuthentication(UserDB userDB) {
-        this.userDB = userDB;
+    private UserDB userDB;
 
+    public MyUserAuthentication() {
+        userDB = new MyUserDB();
     }
 
     public UserInfo loginUser(String userID, String userPassword) {

@@ -34,6 +34,8 @@ public class MyClientResponse implements ClientResponse{
         return location;
     }
 
+    public Date getPredictedTime(){return date}
+
     public String getID() {
         return userID;
     }

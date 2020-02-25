@@ -1,10 +1,10 @@
 import java.util.Map;
 
 public class MyUserDB implements  UserDB{
-    Map<String, String> userIDToPasswordTable;
+    private Map<String, String> userIDToPasswordTable;
 
-    public MyUserDB(Map<String, String> userIDToPasswordTable) {
-        this.userIDToPasswordTable = userIDToPasswordTable;
+    public MyUserDB() {
+        this.userIDToPasswordTable = new HashMap<>();
     }
 
 

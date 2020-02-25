@@ -1,12 +1,12 @@
 import java.util.Date;
 
 public class MyAdminRequest implements AdminRequest {
-    String userID;
-    String userPassword;
-    int temperature;
-    int humidity, wind;
-    String location;
-    Date date;
+    private String userID;
+    private String userPassword;
+    private int temperature;
+    private int humidity, wind;
+    private String location;
+    private Date date;
 
     public MyAdminRequest(String userID, String userPassword, int temperature, int humidity, int wind, String location, Date date) {
         this.userID = userID;

@@ -1,6 +1,7 @@
 public interface ClientResponse extends UserInfo {
-    int getCurrentTemperature();
-    int getCurrentHumidity();
-    int getCurrentWind();
-    String getCurrentLocation();
+    int getPredictedTemperature();
+    int getPredictedHumidity();
+    int getPredictedWind();
+    String getLocation();
+    Date getPredictedTime();
 }

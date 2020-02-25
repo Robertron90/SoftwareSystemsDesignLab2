@@ -3,4 +3,5 @@ public interface ClientRequest extends UserInfo {
     int getCurrentHumidity();
     int getCurrentWind();
     String getCurrentLocation();
+    Date getPredictionTime():
 }
