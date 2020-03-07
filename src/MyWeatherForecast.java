@@ -7,15 +7,10 @@ public class MyWeatherForecast implements WeatherForecast {
     private MyWeatherForecast(){
     }
 
-    public void setWeatherDB(WeatherDB weatherDB){
-        this.weatherDB = weatherDB;
-    }
-
-    public WeatherDB getWeatherDB(){
-        return this.weatherDB;
-    }
-
-    public static MyWeatherForecast getInstance(){
+    public static MyWeatherForecast getInstance(WeatherDB weatherDB){
+        if (obj.weatherDB == null) {
+            obj.weatherDB = weatherDB;
+        }
         return obj;
     }
 
