@@ -1,19 +1,23 @@
+import java.util.Date;
+
 public class MyClientRequest implements ClientRequest{
 
     private String userID;
     private String userPassword;
     private int currentTemp, currentHumidity, currentWind;
-    private String currentLocation;
     private Date predictionTime;
+    private FlyweightLocation flyweightLocation;
+    private FlyweightLocationFactory flyweightLocationFactory;
 
-    public MyClientRequest(String userID, String userPassword, int currentTemp, int currentHumidity, int currentWind, String currentLocation. Date predictionTime) {
+    public MyClientRequest(String userID, String userPassword, int currentTemp, int currentHumidity, int currentWind, String currentLocation, Date predictionTime) {
         this.userID = userID;
         this.userPassword = userPassword;
         this.currentTemp = currentTemp;
         this.currentHumidity = currentHumidity;
         this.currentWind = currentWind;
-        this.currentLocation = currentLocation;
         this.predictionTime = predictionTime;
+        flyweightLocationFactory = FlyweightLocationFactory.getInstance();
+        flyweightLocation = flyweightLocationFactory.getFlywayLocation(currentLocation);
     }
 
     public String getID() {
@@ -42,7 +46,7 @@ public class MyClientRequest implements ClientRequest{
         return currentWind;
     }
     public String getCurrentLocation(){
-        return  currentLocation;
+        return  flyweightLocation.getLocation();
     }
-    public Date getPredictionTime(){return predictionTime}
+    public Date getPredictionTime(){return predictionTime; }
 }

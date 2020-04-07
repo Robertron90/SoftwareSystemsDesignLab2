@@ -2,7 +2,6 @@ import java.util.Date;
 
 public class MyRequestFactory implements  RequestFactory{
 
-
     public MyRequestFactory() {
     }
 

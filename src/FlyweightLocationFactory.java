@@ -1,11 +1,11 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class FlywayLocationFactory {
+public class FlyweightLocationFactory {
     private Map<String, FlyweightLocation> locations;
-    private static FlywayLocationFactory obj = new FlywayLocationFactory();
+    private static FlyweightLocationFactory obj = new FlyweightLocationFactory();
 
-    private FlywayLocationFactory(){
+    private FlyweightLocationFactory(){
         locations = new HashMap<>();
     }
     public FlyweightLocation getFlywayLocation(String location) {
@@ -14,7 +14,7 @@ public class FlywayLocationFactory {
         }
         return locations.get(location);
     }
-    public static FlywayLocationFactory getInstance(){
+    public static FlyweightLocationFactory getInstance(){
         return obj;
     }
 }

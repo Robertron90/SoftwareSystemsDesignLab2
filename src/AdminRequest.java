@@ -6,6 +6,4 @@ public interface AdminRequest extends UserInfo{
     int getWindToAdd();
     String getLocationToAdd();
     Date getTimeOfWeatherHappening();
-
-
 }

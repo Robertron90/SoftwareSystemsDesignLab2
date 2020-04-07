@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public interface ClientResponse extends UserInfo {
     int getPredictedTemperature();
     int getPredictedHumidity();
