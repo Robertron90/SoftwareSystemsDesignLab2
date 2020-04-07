@@ -1,3 +1,10 @@
+package Entities.Factories;
+
+import Entities.Requests.AdminRequest;
+import Entities.Requests.ClientRequest;
+import Entities.UserInfo;
+
+
 import java.util.Date;
 
 public interface RequestFactory {

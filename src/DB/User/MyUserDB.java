@@ -1,3 +1,8 @@
+package DB;
+
+import Entities.MyUserInfo;
+import Entities.UserInfo;
+
 import java.util.HashMap;
 import java.util.Map;
 

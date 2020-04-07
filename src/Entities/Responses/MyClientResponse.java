@@ -1,3 +1,8 @@
+package Entities_Responses;
+
+import Entities_Factories.FlyweightLocationFactory;
+import Entities_others.FlyweightLocation;
+
 import java.util.Date;
 
 public class MyClientResponse implements ClientResponse{

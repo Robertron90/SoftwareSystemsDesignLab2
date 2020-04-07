@@ -1,3 +1,5 @@
+package Others;
+
 public class FlyweightLocation {
     private String location;
 

@@ -1,3 +1,5 @@
+package Entities;
+
 public class MyUserInfo implements UserInfo{
     String userID;
     String userPassword;

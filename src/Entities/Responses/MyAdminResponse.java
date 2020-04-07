@@ -1,3 +1,5 @@
+package Entities_Responses;
+
 public class MyAdminResponse implements AdminResponse {
 
     String userID;

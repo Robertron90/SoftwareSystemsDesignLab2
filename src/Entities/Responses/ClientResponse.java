@@ -1,3 +1,7 @@
+package Entities_Responses;
+
+import Entities_others.UserInfo;
+
 import java.util.Date;
 
 public interface ClientResponse extends UserInfo {

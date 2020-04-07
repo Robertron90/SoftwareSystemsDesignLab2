@@ -1,3 +1,9 @@
+package Others;
+
+import DB.User.MyUserDB;
+import DB.User.UserDB;
+import Entities.UserInfo;
+
 public class MyUserAuthentication implements UserAuthentication {
 
     private UserDB userDB;

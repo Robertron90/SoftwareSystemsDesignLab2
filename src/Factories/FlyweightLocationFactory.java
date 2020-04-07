@@ -1,3 +1,7 @@
+package Entities.Factories;
+
+import Entities.Others.FlyweightLocation;
+
 import java.util.HashMap;
 import java.util.Map;
 

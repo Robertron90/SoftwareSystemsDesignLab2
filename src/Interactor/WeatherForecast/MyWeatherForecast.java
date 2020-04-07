@@ -1,3 +1,9 @@
+package Others;
+
+import DB.Weather.WeatherDB;
+import Entities.Requests.ClientRequest;
+import Entities.Responses.ClientResponse;
+
 public class MyWeatherForecast implements WeatherForecast {
 
     private WeatherDB weatherDB;
