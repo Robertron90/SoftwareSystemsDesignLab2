@@ -1,8 +1,10 @@
-package Others;
+package Interactor.WeatherForecast;
 
 import DB.Weather.WeatherDB;
 import Entities.Requests.ClientRequest;
 import Entities.Responses.ClientResponse;
+import Memento.Memento;
+import Memento.MyMemento;
 
 public class MyWeatherForecast implements WeatherForecast {
 
@@ -22,5 +24,17 @@ public class MyWeatherForecast implements WeatherForecast {
 
     public ClientResponse predictWeatherForClient(ClientRequest request) {
         return null;
+    }
+
+    public void setState(WeatherDB state){
+        this.weatherDB = state;
+    }
+
+    public Memento saveStateToMemento() {
+        return new MyMemento(weatherDB);
+    }
+
+    public void getStateFromMemento(Memento memento){
+        weatherDB = memento.getState();
     }
 }

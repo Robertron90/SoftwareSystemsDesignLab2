@@ -1,7 +1,7 @@
-package Entities_Requests;
+package Entities.Requests;
 
-import Entities_Factories.FlyweightLocationFactory;
-import Entities_others.FlyweightLocation;
+import Factories.FlyweightLocationFactory;
+import Entities.FlyweightLocation;
 
 import java.util.Date;
 

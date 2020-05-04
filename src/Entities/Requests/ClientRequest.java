@@ -1,6 +1,6 @@
-package Entities_Requests;
+package Entities.Requests;
 
-import Entities_others.UserInfo;
+import Entities.UserInfo.UserInfo;
 
 import java.util.Date;
 

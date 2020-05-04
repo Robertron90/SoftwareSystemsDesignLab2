@@ -1,8 +1,8 @@
-package Others;
+package Interactor.UserAuthentication;
 
 import DB.User.MyUserDB;
 import DB.User.UserDB;
-import Entities.UserInfo;
+import Entities.UserInfo.UserInfo;
 
 public class MyUserAuthentication implements UserAuthentication {
 

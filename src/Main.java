@@ -1,3 +1,16 @@
+import DB.Weather.MyWeatherDB;
+import DB.Weather.WeatherDB;
+import Factories.MyRequestFactory;
+import Factories.RequestFactory;
+import Entities.Responses.AdminResponse;
+import Entities.Responses.ClientResponse;
+import Entities.UserInfo.UserInfo;
+import Interactor.UserAuthentication.MyUserAuthentication;
+import Interactor.UserAuthentication.UserAuthentication;
+import Interactor.WeatherForecast.MyWeatherForecast;
+import Interactor.WeatherForecast.WeatherForecast;
+import Memento.MyCareTaker;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
@@ -8,6 +21,7 @@ public class Main {
     RequestFactory requestFactory;
     WeatherForecast weatherForecast;
     WeatherDB weatherDB;
+    MyCareTaker careTaker;
 
     public void start() {
         // start of Weather Forecast System
@@ -58,6 +72,7 @@ public class Main {
         main.weatherForecast = MyWeatherForecast.getInstance(main.weatherDB);
         main.userAuthentication = new MyUserAuthentication();
         main.requestFactory = new MyRequestFactory();
+        main.careTaker = new MyCareTaker();
     }
 
 }

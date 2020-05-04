@@ -1,10 +1,10 @@
-package Entities.Factories;
+package Factories;
 
 import Entities.Requests.AdminRequest;
 import Entities.Requests.ClientRequest;
 import Entities.Requests.MyAdminRequest;
 import Entities.Requests.MyClientRequest;
-import Entities.UserInfo;
+import Entities.UserInfo.UserInfo;
 
 import java.util.Date;
 

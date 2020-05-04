@@ -1,7 +1,7 @@
-package DB;
+package DB.User;
 
-import Entities.MyUserInfo;
-import Entities.UserInfo;
+import Entities.UserInfo.MyUserInfo;
+import Entities.UserInfo.UserInfo;
 
 import java.util.HashMap;
 import java.util.Map;

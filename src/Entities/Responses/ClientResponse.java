@@ -1,6 +1,6 @@
-package Entities_Responses;
+package Entities.Responses;
 
-import Entities_others.UserInfo;
+import Entities.UserInfo.UserInfo;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package Entities_Responses;
+package Entities.Responses;
 
 public class MyAdminResponse implements AdminResponse {
 

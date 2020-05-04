@@ -1,4 +1,4 @@
-package Others;
+package Entities;
 
 public class FlyweightLocation {
     private String location;

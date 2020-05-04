@@ -1,4 +1,4 @@
-package Entities;
+package Entities.UserInfo;
 
 public class MyUserInfo implements UserInfo{
     String userID;

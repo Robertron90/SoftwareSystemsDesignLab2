@@ -1,4 +1,4 @@
-package Entities;
+package Entities.UserInfo;
 
 public interface UserInfo {
     String getID();

@@ -1,6 +1,6 @@
-package Others;
+package Interactor.UserAuthentication;
 
-import Entities.UserInfo;
+import Entities.UserInfo.UserInfo;
 
 public interface UserAuthentication {
     public UserInfo loginUser(String userID, String userPassword);

@@ -1,8 +1,8 @@
-package Entities.Factories;
+package Factories;
 
 import Entities.Requests.AdminRequest;
 import Entities.Requests.ClientRequest;
-import Entities.UserInfo;
+import Entities.UserInfo.UserInfo;
 
 
 import java.util.Date;

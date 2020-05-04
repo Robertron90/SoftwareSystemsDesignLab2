@@ -1,6 +1,6 @@
-package Entities.Factories;
+package Factories;
 
-import Entities.Others.FlyweightLocation;
+import Entities.FlyweightLocation;
 
 import java.util.HashMap;
 import java.util.Map;
